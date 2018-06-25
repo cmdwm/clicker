@@ -1,2 +1,0 @@
-# clicker
-Clicc Counter
