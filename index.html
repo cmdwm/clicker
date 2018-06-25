@@ -39,20 +39,7 @@ button {
   color: lightblue;
 }
 </style>
-<script>
-  var button = document.getElementById("clickme"),
-  count = 0;
-button.onclick = function() {
-  count += 1;
-  button.innerHTML =  `${count} Clicks`;
-};
-</script>
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <title>Clicky Boi</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -62,6 +49,11 @@ button.onclick = function() {
     <button id="clickme">0 Clicks</button>
 
   </div>
-</body>
-
-</html>
+<script>
+  var button = document.getElementById("clickme")
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  button.innerHTML =  `${count} Clicks`;
+}
+</script>
